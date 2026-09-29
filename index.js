@@ -2,12 +2,11 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const qrcode = require('qrcode-terminal');
 
-const genAI = new GoogleGenerativeAI("Ab8RN6LD9DYA5dFmkcEv6xAp9rrGPKaOtq5DHJKMQzEXGEAIeA");
+const genAI = new GoogleGenerativeAI("Ab8RN6LD9DYA5DfrnkcEv6xAp9rrGPKaOtq5DHJIKMQzEXGEALEA");
 
 const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
-        executablePath: '/usr/bin/google-chrome-stable',
         args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
     }
 });
